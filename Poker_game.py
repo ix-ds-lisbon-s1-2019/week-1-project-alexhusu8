@@ -37,8 +37,26 @@ class Card_hand:
         hand=random.sample(card,5)
  
 #%%
-card1 = Card()#this is object
-card2 = Card()
+class Card:
+    def _init_(self, number, suite):       
+        self.number=number
+        self.suite=suite
+        
+        
+
+suite=['clubs','spades','hearts','diamonds']
+number=[2,3,4,5,6,7,8,9,10,'J','Q','K','A']
+
+x=random.choice(number)
+
+y=random.choice(suite)
+
+card_1 = Card(number=x, suite=y ) #this is object
+card_2 =Card()
+
+    
+
+
 
 
 
