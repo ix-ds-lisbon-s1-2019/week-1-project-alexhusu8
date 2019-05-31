@@ -10,7 +10,8 @@ Created on Thu May 30 17:29:27 2019
 #%%
 import sys
 import random as rand
-number_players=sys.argv[0]
+
+number_players = int(sys.argv[1])
 print(number_players)
 
 int(number_players)
@@ -18,7 +19,6 @@ int(number_players)
 for i in range(number_players):
 	name=input("enter your name")
 	print("your name is {}".format(name))
-    
     
 ls=[2,3,4,5,6,7,8,9,10,'j','q','k','a']*4
 dicto={}
@@ -61,8 +61,8 @@ winning_card=[]
 winning_card.append(max(highest_cards))
 
 print(winning_card)
-
+str(winning_card)
 if len(winning_card)==1:
-    print("The person with {} won the game!"(winning_card).format)
+    print("The person with {} won the game!".format(winning_card))
 elif len(winning_card) > 1:
     print("There was a tie, nobody wins the game!")
